@@ -14,7 +14,11 @@ unzip 2023.2.zip -d openvino_html_doc
 
 # install deps
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 
 # export vars to current terminal
 set -a; source .env; set +a
+
+# preprocess data
+python openvino-doc-specific-extractor.py
 ```
