@@ -1,3 +1,6 @@
+openvino-llm-chatbot-rag/openvino_html_doc/*
+openvino-llm-chatbot-rag/*.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
