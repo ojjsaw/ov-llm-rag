@@ -5,12 +5,13 @@
 git clone https://github.com/yas-sim/openvino-llm-chatbot-rag.git
 
 # grab the docs zip
+cd openvino-llm-chatbot-rag
 wget https://docs.openvino.ai/archives/2023.2.zip
 
 # extract
-cd openvino-llm-chatbot-rag
 mkdir -p openvino_html_doc
-unzip 2023.2.zip -d openvino_html_doc
+unzip 2023.2.zip
+mv 2023.2 openvino_html_doc
 
 # install deps
 pip install -r requirements.txt
