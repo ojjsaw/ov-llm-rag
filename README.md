@@ -79,8 +79,10 @@ find openvino-html-doc -type f -name "*namespacengraph*.html" -exec rm {} \;
 
 after deep certain-api-html-files: 1092
 
-find openvino-html-doc -type f -name "*classInferenceEngine*.html" -exec rm {} \;
-find openvino-html-doc -type f -name "*openvino_docs_OV_UG_lpt*.html" -exec rm {} \;
+# find openvino-html-doc -type f -name "*classInferenceEngine*.html" -exec rm {} \;
+# find openvino-html-doc -type f -name "*openvino_docs_OV_UG_lpt*.html" -exec rm {} \;
 
+# run once downloading of models
+python llm-model-downloader.py
 
 ```
